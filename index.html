@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="uk"> 
+<head>
+ <meta charset="UTF-8"> 
+ <meta name="viewport"content="width=device-width, initial-scale=1.0">
+ <title>Квітковий Рай — Доставка Квітів</title>
+ <style>
+ * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+   }
+
+    body {
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        background-color: #fcf8f8;
+        color: #333;
+        display: flex;
+        flex-direction: column;
+        min-height: 100vh;
+    }
+
+    header {
+        background-color: #e8a5b8;
+        color: white;
+        padding: 20px;
+        text-align: center;
+        box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+
+    header h1 {
+        font-size: 2.2rem;
+        margin-bottom: 5px;
+    }
+
+    .container {
+        max-width: 900px;
+        margin: 30px auto;
+        padding: 0 20px;
+        flex: 1;
+    }
+
+    .intro {
+        text-align: center;
+        margin-bottom: 30px;
+    }
+
+    .intro p {
+        font-size: 1.1rem;
+        color: #666;
+    }
+
+    .card-container {
+        display: flex;
+        justify-content: center;
+        gap: 25px;
+        flex-wrap: wrap;
+    }
+
+    .flower-card {
+        background: white;
+        border-radius: 12px;
+        box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+        overflow: hidden;
+        width: 300px;
+        text-align: center;
+        transition: transform 0.2s;
+    }
+
+    .flower-card:hover {
+        transform: translateY(-5px);
+    }
+
+    .flower-card img {
+        width: 100%;
+        height: 250px;
+        object-fit: cover;
+    }
+
+    .flower-info {
+        padding: 20px;
+    }
+
+    .flower-info h3 {
+        margin-bottom: 10px;
+        color: #d45d79;
+    }
+
+    .price {
+        font-size: 1.2rem;
+        font-weight: bold;
+        color: #2e7d32;
+        margin: 10px 0;
+    }
+
+    .buy-btn {
+        background-color: #e8a5b8;
+        color: white;
+        border: none;
+        padding: 10px 20px;
+        border-radius: 20px;
+        cursor: pointer;
+        font-size: 1rem;
+        transition: background-color 0.2s;
+    }
+
+    .buy-btn:hover {
+        background-color: #d45d79;
+    }
+
+    footer {
+        background-color: #333;
+        color: white;
+        text-align: center;
+        padding: 15px;
+        margin-top: 40px;
+        font-size: 0.9rem;
+    }
+  </style>
+</head>
+<body>
+
+
+<header>
+    <h1>Магазин «Квітковий Рай»</h1>
+    <p>Свіжі квіти для ваших найважливіших моментів</p></header>
+
+<div class="container">
+    <section class="intro">
+        <h2>Наші популярні букети</h2>
+        <p>Обирайте найкращі композиції з безкоштовною доставкою по місту.</p>
+    </section>
+
+    <div class="card-container">
+        <!-- Картка з квіткою -->
+        <div class="flower-card">
+            <!-- Зображення: ви можете вказати шлях до свого файлу (наприклад, flower.jpg) -->
+            <img src="https://images.unsplash.com/photo-1561181286-d3fee7d55364?q=80&w=600&auto=format&fit=crop" alt="Букет ніжних півоній">
+            <div class="flower-info">
+                <h3>Ніжність півоній</h3>
+                <p>Вишуканий букет із свіжих рожевих півоній та авторським оформленням.</p>
+                <div class="price">850 грн</div>
+                <button class="buy-btn">Замовити</button>
+            </div>
+        </div>
+    </div></div>
+
+<footer>
+    <p>&copy; 2026 Магазин «Квітковий Рай». Усі права захищено.</p>
+    <p>Телефон: +380 (99) 123-45-67</p>
+ </footer>
+</body>
+</html>
